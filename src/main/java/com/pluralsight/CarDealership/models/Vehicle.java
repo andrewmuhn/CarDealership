@@ -1,8 +1,7 @@
 package com.pluralsight.CarDealership.models;
 
 public class Vehicle {
-    private String vin;
-    private boolean sold;
+    private int vin;
     private int year;
     private String make;
     private String model;
@@ -11,9 +10,8 @@ public class Vehicle {
     private int odometer;
     private double price;
 
-    public Vehicle(String vin, boolean sold, int year, String make, String model, VehicleType vehicleType, String color, int odometer, double price) {
+    public Vehicle(int vin, int year, String make, String model, VehicleType vehicleType, String color, int odometer, double price) {
         this.vin = vin;
-        this.sold = sold;
         this.year = year;
         this.make = make;
         this.model = model;
@@ -23,26 +21,14 @@ public class Vehicle {
         this.price = price;
     }
 
-    @Override
-    public String toString(){
-        return String.format("\u001b[36m| %-18s | %-12b | %-12d | %-12s | %-12s | %-14s | %-12s | %-12s | %-12.2f |\u001b[0m",
-                vin, sold, year, make, model, vehicleType.toString().substring(0, 1).toUpperCase() + vehicleType.toString().substring(1).toLowerCase(), color, odometer, price);
-    }
-
-    public String getVin() {
+    public int getVin() {
         return vin;
     }
 
-    public void setVin(String vin) {
+    public void setVin(int vin) {
         this.vin = vin;
     }
 
-    public boolean isSold() {
-        return sold;
-    }
-    public void setSold(boolean sold) {
-        this.sold = sold;
-    }
     public int getYear() {
         return year;
     }
@@ -70,9 +56,11 @@ public class Vehicle {
     public VehicleType getVehicleType() {
         return vehicleType;
     }
+
     public void setVehicleType(VehicleType vehicleType) {
         this.vehicleType = vehicleType;
     }
+
     public String getColor() {
         return color;
     }
