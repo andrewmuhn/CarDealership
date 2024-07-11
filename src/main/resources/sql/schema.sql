@@ -47,14 +47,15 @@ INSERT INTO dealerships (name, address, phone) VALUES
 INSERT INTO vehicles (vin, sold, make, model, year, vehicle_type, color, odometer, price) VALUES
 ('1HGCM82633A123456', false, 'Honda', 'Accord', 2003, 'SEDAN', 'Blue', 120000, 5000.00),
 ('1HGCM82633A123457', false, 'Toyota', 'Camry', 2005, 'SEDAN', 'Red', 110000, 5500.00),
-('1HGCM82633A123458', false, 'Ford', 'Fusion', 2007, 'SEDAN', 'White', 130000, 6000.00),
+('1HGCM82633A123458', false, 'Ford', 'F150', 2007, 'PICKUP_TRUCK', 'White', 130000, 6000.00),
 ('1HGCM82633A123459', false, 'Chevrolet', 'Malibu', 2009, 'SEDAN', 'Black', 140000, 6500.00),
 ('1HGCM82633A123460', false, 'Nissan', 'Altima', 2011, 'SEDAN', 'Silver', 150000, 7000.00),
 ('1HGCM82633A123461', false, 'Hyundai', 'Sonata', 2013, 'SEDAN', 'Gray', 160000, 7500.00),
 ('1HGCM82633A123462', false, 'Kia', 'Optima', 2015, 'SEDAN', 'Blue', 170000, 8000.00),
 ('1HGCM82633A123463', false, 'Subaru', 'Legacy', 2017, 'SEDAN', 'Red', 180000, 8500.00),
 ('1HGCM82633A123464', false, 'Mazda', '6', 2019, 'SEDAN', 'White', 190000, 9000.00),
-('1HGCM82633A123465', false, 'Volkswagen', 'Passat', 2021, 'SEDAN', 'Black', 200000, 9500.00);
+('1HGCM82633A123465', false, 'Volkswagen', 'Passat', 2021, 'SEDAN', 'Black', 200000, 9500.00),
+('1HGCM82633A123466', false, 'Ram', 'Promaster', 2018, 'PASSENGER_VAN', 'White', 200000, 27500.00);
 
 -- Inserting data into inventory
 INSERT INTO inventory (dealership_id, vehicle_id) VALUES
