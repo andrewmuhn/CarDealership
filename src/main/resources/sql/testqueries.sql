@@ -20,5 +20,4 @@ JOIN inventory ON vehicles.vehicle_id = inventory.vehicle_id
 JOIN dealerships ON dealerships.dealership_id = inventory.dealership_id
 WHERE make = 'Toyota' AND model = 'Camry';
 
-SELECT * FROM vehicles
-WHERE make = 'Toyota' AND model = 'Camry';
+
