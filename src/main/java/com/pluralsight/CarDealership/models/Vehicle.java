@@ -23,12 +23,6 @@ public class Vehicle {
         this.price = price;
     }
 
-    @Override
-    public String toString(){
-        return String.format("\u001b[36m| %-18s | %-12b | %-12d | %-12s | %-12s | %-14s | %-12s | %-12s | %-12.2f |\u001b[0m",
-                vin, sold, year, make, model, vehicleType.toString().substring(0, 1).toUpperCase() + vehicleType.toString().substring(1).toLowerCase(), color, odometer, price);
-    }
-
     public String getVin() {
         return vin;
     }
@@ -95,5 +89,11 @@ public class Vehicle {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("\u001b[36m| %-18s | %-12b | %-12d | %-12s | %-12s | %-14s | %-12s | %-12s | %-12.2f |\u001b[0m",
+                vin, sold, year, make, model, vehicleType.toString().substring(0, 1).toUpperCase() + vehicleType.toString().substring(1).toLowerCase(), color, odometer, price);
     }
 }
