@@ -1,4 +1,4 @@
-package com.pluralsight.CarDealership.consoleapp;
+package com.pluralsight.CarDealership.consoleapp.utils;
 
 public class TableHeaders {
     public static void printVehicleHeader() {
